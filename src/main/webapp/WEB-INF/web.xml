@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <servlet>
+	<servlet-name>loginpage</servlet-name>
+	<jsp-file>/login.jsp</jsp-file>  
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>loginpage</servlet-name>
+  	<url-pattern>/loginpage</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+	<servlet-name>signuppage</servlet-name>
+	<jsp-file>/SignUp.jsp</jsp-file>  
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>signuppage</servlet-name>
+  	<url-pattern>/signuppage</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	<servlet-name>logincheck</servlet-name>
+	<servlet-class>com.indianbank.controller.LoginServlet</servlet-class>  
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>logincheck</servlet-name>
+  	<url-pattern>/authentication</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+	<servlet-name>signupdetails</servlet-name>
+	<servlet-class>com.indianbank.controller.SignUpServlet</servlet-class>  
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>signupdetails</servlet-name>
+  	<url-pattern>/signupdetails</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	<servlet-name>addmoney</servlet-name>
+	<servlet-class>com.indianbank.controller.AddMoneyServlet</servlet-class>  
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>addmoney</servlet-name>
+  	<url-pattern>/addmoney</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+	<servlet-name>withdrawmoney</servlet-name>
+	<servlet-class>com.indianbank.controller.WithdrawServlet</servlet-class>  
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>withdrawmoney</servlet-name>
+  	<url-pattern>/withdrawmoney</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+	<servlet-name>balance</servlet-name>
+	<servlet-class>com.indianbank.controller.BalanceServlet</servlet-class>  
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>balance</servlet-name>
+  	<url-pattern>/balance</url-pattern>
+  </servlet-mapping>
+ 
+	 <servlet>
+	<servlet-name>transactions</servlet-name>
+	<jsp-file>/LastTransactions.jsp</jsp-file>  
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>transactions</servlet-name>
+  	<url-pattern>/transactions</url-pattern>
+  </servlet-mapping>
+
+	  <servlet>
+	<servlet-name>updatedetails</servlet-name>
+	<jsp-file>/updateDetails.jsp</jsp-file>  
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>updatedetails</servlet-name>
+  	<url-pattern>/updatedetails</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+	<servlet-name>detailsupdate</servlet-name>
+	<servlet-class>com.indianbank.controller.UpdateDetailsServlet</servlet-class>  
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>detailsupdate</servlet-name>
+  	<url-pattern>/detailsupdate</url-pattern>
+  </servlet-mapping>
+
+	  <servlet>
+	<servlet-name>delete Data</servlet-name>
+	<servlet-class>com.indianbank.controller.DeleteServlet</servlet-class>  
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>delete Data</servlet-name>
+  	<url-pattern>/deleteuser</url-pattern>
+  </servlet-mapping>
+
+</web-app>
